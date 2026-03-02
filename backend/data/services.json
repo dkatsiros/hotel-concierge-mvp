@@ -1,0 +1,34 @@
+{
+  "services": [
+    {
+      "name": "Room Service",
+      "hours": "24/7",
+      "contact": "Dial 1 from room phone",
+      "description": "Full menu available around the clock."
+    },
+    {
+      "name": "Spa & Wellness",
+      "hours": "7:00 AM - 9:00 PM",
+      "contact": "Dial 4 or visit the spa reception on Level B1",
+      "description": "Massages, facials, and wellness treatments. Advance booking recommended."
+    },
+    {
+      "name": "Fitness Center",
+      "hours": "5:00 AM - 11:00 PM",
+      "contact": "Level B1, key card access",
+      "description": "Full gym with cardio equipment, free weights, and yoga studio."
+    },
+    {
+      "name": "Business Center",
+      "hours": "7:00 AM - 10:00 PM",
+      "contact": "Lobby Level",
+      "description": "Printing, scanning, and private meeting rooms available."
+    },
+    {
+      "name": "Concierge Desk",
+      "hours": "24/7",
+      "contact": "Dial 0 or visit the lobby",
+      "description": "Restaurant reservations, tours, transportation, and special requests."
+    }
+  ]
+}

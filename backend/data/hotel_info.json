@@ -1,0 +1,19 @@
+{
+  "name": "Grand Hotel Example",
+  "address": "123 Main Street, Example City, EC 12345",
+  "phone": "+1 (555) 123-4567",
+  "amenities": ["Pool", "Spa", "Gym", "Business Center", "Rooftop Bar", "Free Wi-Fi"],
+  "check_in": "15:00",
+  "check_out": "11:00",
+  "parking": {
+    "valet": "$45/night",
+    "self_park": "$25/night"
+  },
+  "wifi": {
+    "network": "GrandHotel-Guest",
+    "password": "Available at front desk"
+  },
+  "policies": {
+    "details_file": "faq.txt"
+  }
+}

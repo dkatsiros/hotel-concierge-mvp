@@ -1,0 +1,25 @@
+Frequently Asked Questions - Grand Hotel Example
+
+Q: What time is check-in and check-out?
+A: Check-in is at 3:00 PM and check-out is at 11:00 AM. Early check-in and late check-out may be available upon request, subject to availability.
+
+Q: Is there a cancellation policy?
+A: Reservations can be cancelled up to 48 hours before check-in at no charge. Cancellations within 48 hours are subject to a one-night charge.
+
+Q: Do you allow pets?
+A: Yes! We are a pet-friendly hotel. Dogs under 50 lbs are welcome with a $75 per stay pet fee. Please notify us at booking.
+
+Q: Is breakfast included?
+A: Complimentary continental breakfast is included with select room packages. Our full breakfast buffet at The Grand Dining Room is available for $35 per person.
+
+Q: Do you have an airport shuttle?
+A: We offer complimentary shuttle service to and from the airport between 6:00 AM and 11:00 PM. Please call the front desk to arrange pickup.
+
+Q: Is there a pool?
+A: Yes, our heated outdoor pool is open from 7:00 AM to 10:00 PM daily. Towels and loungers are provided poolside.
+
+Q: Can I request extra pillows or blankets?
+A: Of course! Please call housekeeping at extension 2 and we will deliver them to your room promptly.
+
+Q: Do you have meeting or event spaces?
+A: Yes, we have multiple event spaces accommodating 10 to 300 guests. Contact our events team at events@grandhotelexample.com.

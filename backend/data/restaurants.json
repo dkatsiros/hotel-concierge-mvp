@@ -1,0 +1,28 @@
+{
+  "restaurants": [
+    {
+      "name": "The Grand Dining Room",
+      "cuisine": "Contemporary American",
+      "hours": "6:30 AM - 10:00 PM",
+      "location": "Lobby Level",
+      "description": "Our flagship restaurant offering farm-to-table cuisine with panoramic city views.",
+      "dress_code": "Smart casual"
+    },
+    {
+      "name": "Sakura Lounge",
+      "cuisine": "Japanese",
+      "hours": "11:30 AM - 11:00 PM",
+      "location": "2nd Floor",
+      "description": "Authentic Japanese cuisine featuring fresh sushi, ramen, and sake selections.",
+      "dress_code": "Casual"
+    },
+    {
+      "name": "Rooftop 360",
+      "cuisine": "Cocktails & Small Plates",
+      "hours": "4:00 PM - 1:00 AM",
+      "location": "Rooftop",
+      "description": "Craft cocktails and artisan small plates with 360-degree city views.",
+      "dress_code": "Smart casual"
+    }
+  ]
+}
