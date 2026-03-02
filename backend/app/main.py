@@ -1,9 +1,31 @@
+import logging
+from contextlib import asynccontextmanager
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
+from app.config import settings
 from app.routers import health, chat
 
-app = FastAPI(title="Hotel Concierge API")
+logger = logging.getLogger(__name__)
+
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Sync knowledge base to ElevenLabs on startup
+    if settings.elevenlabs_api_key and settings.elevenlabs_agent_id:
+        try:
+            from app.services.elevenlabs_kb import ElevenLabsKBSync
+
+            syncer = ElevenLabsKBSync()
+            docs = syncer.sync()
+            print(f"ElevenLabs KB synced: {len(docs)} docs")
+        except Exception as e:
+            print(f"WARNING: ElevenLabs KB sync failed on startup: {e}")
+    yield
+
+
+app = FastAPI(title="Hotel Concierge API", lifespan=lifespan)
 
 app.add_middleware(
     CORSMiddleware,

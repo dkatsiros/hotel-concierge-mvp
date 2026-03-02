@@ -42,3 +42,6 @@ cd backend && alembic upgrade head
 - JSON data files can reference .txt files for long-form content
 - WebSocket at `/ws/chat` for text chat
 - Health checks at `/health` and `/health/db`
+
+# Rules
+- When making any architectural change, it should always be reflected on the claude.md file.
