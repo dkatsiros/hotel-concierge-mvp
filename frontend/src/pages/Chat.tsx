@@ -1,6 +1,5 @@
 import { Link } from "react-router";
 import ChatWindow from "../components/ChatWindow";
-import VoiceAgent from "../components/VoiceAgent";
 
 export default function Chat() {
   return (
@@ -14,7 +13,6 @@ export default function Chat() {
       </header>
       <div className="flex flex-1 flex-col">
         <ChatWindow />
-        <VoiceAgent />
       </div>
     </div>
   );

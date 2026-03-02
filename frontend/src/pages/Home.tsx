@@ -1,6 +1,8 @@
 import { Link } from "react-router";
 
 export default function Home() {
+  const hasVoice = !!import.meta.env.VITE_ELEVENLABS_AGENT_ID;
+
   return (
     <div className="flex min-h-screen flex-col items-center justify-center bg-stone-50 px-4">
       <h1 className="mb-2 text-4xl font-bold text-stone-800">
@@ -14,12 +16,21 @@ export default function Home() {
         >
           Start Chat
         </Link>
-        <button
-          id="voice-trigger"
-          className="rounded-lg border border-stone-300 px-6 py-3 text-stone-700 transition hover:bg-stone-100"
-        >
-          Voice
-        </button>
+        {hasVoice ? (
+          <Link
+            to="/voice"
+            className="rounded-lg border border-stone-300 px-6 py-3 text-stone-700 transition hover:bg-stone-100"
+          >
+            Voice
+          </Link>
+        ) : (
+          <span
+            title="Set VITE_ELEVENLABS_AGENT_ID to enable voice"
+            className="cursor-not-allowed rounded-lg border border-stone-200 px-6 py-3 text-stone-400"
+          >
+            Voice (not configured)
+          </span>
+        )}
       </div>
     </div>
   );
