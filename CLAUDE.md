@@ -47,6 +47,12 @@ cd backend && alembic upgrade head
 - Adding a new tool: create module with `TOOL_CONFIG` + `handler` in `backend/app/tools/`, restart
 - `WEBHOOK_BASE_URL` env var required for tool sync (use Tailscale Funnel or ngrok)
 
+## Config / Env Vars
+- `CHAT_PROVIDER` — `anthropic` (default) or `openai`
+- `CHAT_MODEL` — optional model override; defaults to `claude-sonnet-4-20250514` / `gpt-4o`
+- `ANTHROPIC_API_KEY` — required when provider is anthropic
+- `OPENAI_API_KEY` — required when provider is openai
+
 # Rules
 - When making any architectural change, it should always be reflected on the claude.md file.
 - Always commit after making changes.
