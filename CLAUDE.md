@@ -43,5 +43,11 @@ cd backend && alembic upgrade head
 - WebSocket at `/ws/chat` for text chat
 - Health checks at `/health` and `/health/db`
 
+## Config / Env Vars
+- `CHAT_PROVIDER` — `anthropic` (default) or `openai`
+- `CHAT_MODEL` — optional model override; defaults to `claude-sonnet-4-20250514` / `gpt-4o`
+- `ANTHROPIC_API_KEY` — required when provider is anthropic
+- `OPENAI_API_KEY` — required when provider is openai
+
 # Rules
 - When making any architectural change, it should always be reflected on the claude.md file.

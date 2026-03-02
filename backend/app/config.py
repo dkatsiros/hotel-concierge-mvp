@@ -7,6 +7,9 @@ class Settings(BaseSettings):
     elevenlabs_api_key: str = ""
     elevenlabs_agent_id: str = ""
     elevenlabs_kb_usage_mode: str = "prompt"
+    openai_api_key: str = ""
+    chat_provider: str = "anthropic"  # "anthropic" | "openai"
+    chat_model: str = ""  # empty → use provider default
 
     model_config = {"env_file": ".env", "extra": "ignore"}
 
