@@ -42,6 +42,11 @@ cd backend && alembic upgrade head
 - JSON data files can reference .txt files for long-form content
 - WebSocket at `/ws/chat` for text chat
 - Health checks at `/health` and `/health/db`
+- ElevenLabs webhook tools: `POST /api/tools/{tool_name}`
+- Tool modules in `backend/app/tools/` — auto-discovered via registry
+- Adding a new tool: create module with `TOOL_CONFIG` + `handler` in `backend/app/tools/`, restart
+- `WEBHOOK_BASE_URL` env var required for tool sync (use Tailscale Funnel or ngrok)
 
 # Rules
 - When making any architectural change, it should always be reflected on the claude.md file.
+- Always commit after making changes.
